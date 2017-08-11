@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "redesigning the knowledge website homepage",
   "main": "index.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
     "gulp": "^3.9.1"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
