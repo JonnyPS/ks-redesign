@@ -22,6 +22,28 @@ body, .wrapper, .boxContainer, .box {
   padding:0;
 }
 
+/* sidebar colours */
+
+#sideBar-blue {
+	border-left: 3px solid #03366b;
+}
+
+#sideBar-green {
+	border-left: 3px solid #6c9e30;
+}
+
+#sideBar-orange {
+	border-left: 3px solid #f37021;
+}
+
+#sideBar-lightBlue {
+	border-left: 3px solid #00a0e4;
+}
+
+
+
+
+
 .box-wrapper {
   width: 100%;
   float:left;
@@ -34,7 +56,7 @@ body, .wrapper, .boxContainer, .box {
   margin-right:0.25%;
   margin-bottom:0.25%;  
   display:inline-block;
-	border-left: 3px solid #6c9e30;
+	/*border-left: 3px solid #6c9e30;*/
 }
 
 /*.box:nth-of-type(2) {background:orange}*/
