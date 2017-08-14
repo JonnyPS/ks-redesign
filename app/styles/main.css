@@ -13,7 +13,7 @@ h1 {
 }
 
 h3 {
-	color: #272554;
+	color: #03366b;
 	padding-left: 0.5em;
 	font-size:17px;
 }
@@ -49,13 +49,13 @@ body, .wrapper, .boxContainer, .box {
   display:inline-block;
   margin-right:8px;
   border: 2px black dashed;*/
-}
+/*}*/
 /*
 .box:before{
 	content: "";
 	display: block;
 	padding-top: 100%; 	/* initial ratio of 1:1*/
-}*/
+/*}*/
 
 /*.box:nth-child(6) {
   margin-right:0;
@@ -89,9 +89,11 @@ body, .wrapper, .boxContainer, .box {
 
 .box {
 	position: relative;
-	width: 30%;		/* desired width */
-  background:#f8f8f8;
-  margin-right:1%;
+	/*width: 30%;		 desired width */
+	width:100%;
+  background:#eeeeee;
+  margin-right:0.25%;
+  margin-bottom:0.25%;  
   /*margin: 8px auto 0px;*/
   display:inline-block;
   /*margin-right:8px;*/
@@ -109,10 +111,11 @@ body, .wrapper, .boxContainer, .box {
 .content h3 {
 	position:  absolute;
   font-family: Arial, sans-serif;
-  font-weight: 800;
-  /*padding: 20px 30px;*/
-  font-size: 2.2vw;
-  line-height: 2.9vw;
+  font-weight: bold;
+  /*font-size: 2.4vw;*/
+  /*line-height: 3.1vw;*/
+  font-size: 7.5vw;
+  line-height: 8.5vw;
   top: 1%;
   left: 2%;
   bottom: 0;
@@ -124,7 +127,7 @@ body, .wrapper, .boxContainer, .box {
   font-family: Arial, sans-serif;
   font-weight: 500;
   /*padding: 20px 30px;*/
-  font-size: 1.5vw;
+  font-size: 4.5vw;
   /*top: 100%;*/
   left: 6%;
   bottom: 0;
@@ -134,7 +137,7 @@ body, .wrapper, .boxContainer, .box {
 }
 
 #record {
-	bottom:7%;
+	bottom:8%;
 }
 
 #pubDate {
@@ -143,20 +146,51 @@ body, .wrapper, .boxContainer, .box {
 
 
 
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+	.box {
+		width:47%;
+		/*margin:0 1% 0 1%;*/
+	}
+
+	.content h3 {
+    font-size: 4vw;
+    line-height: 4.5vw;
+	}
+
+	.content p {
+    font-size: 2.5vw;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.box {
+		width:30%;
+	}
+	.content h3 {
+	  font-size: 2.4vw;
+	  line-height: 3.1vw;
+	}
+
+	.content p {
+	  font-size: 1.5vw;
+	}
+}
 
 
 /* for desktops */
-@media (min-width: 992px) { 
+@media only screen and (min-width: 992px) { 
 	.box {
 		width:15%;
 	}
 
 	.content h3 {
-	  font-size: 1.1vw;
+	  font-size: 1.2vw;
 	  line-height: 1.45vw;
 	}
 
 	.content p {
-	  font-size: 0.75vw;
+	  font-size: 0.9vw;
 	}
 }
