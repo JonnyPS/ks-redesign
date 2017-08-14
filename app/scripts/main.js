@@ -8,43 +8,40 @@ var sideBarLightBlue = '#00a0e4';
 
 
 
-
+// var box = document.getElementsByClassName("box");
+// console.log( box );
 var content = document.getElementsByClassName("content");
 console.log( content );
 
 for (i = 0; i < content.length; i++) {
 	content[i].onmouseover = function() {
-		// console.log( this )
-
-
-		// get h3 tag and change colour
+		var colorId = this.parentElement.id;
+		//get h3 tag and change colour
 		for ( i = 0; i < this.childNodes.length; i++ ) {
-			
-		    childrenNodes = this.childNodes[i];
-		    if(childrenNodes.nodeName == 'H3') {
-		    	// console.log( childrenNodes.id )
-		    	childrenNodes.style.color = '#00a0e4';
-		    }
+			childrenNodes = this.childNodes[i];
+			if(childrenNodes.nodeName == 'H3') {
+				console.log(childrenNodes);
+				console.log(colorId);
+				childrenNodes.className += ' ' + colorId + '-text';
+			}
 		}
+	}
+}
 
-
-		// get h3 tag and change colour
-		// for ( i = 0; i < this.childNodes.length; i++ ) {
-		//     childrenNodes = this.childNodes[i];
-		//     if(childrenNodes.nodeName == 'H3') {
-		//     	// console.log( childrenNodes.id )
-		//     	childrenNodes.style.color = '#00a0e4';
-		//     }
-		// }
-
-
+for (i = 0; i < content.length; i++) {
+	content[i].onmouseout = function() {
+		var colorId = this.parentElement.id;
+		//get h3 tag and change colour
+		for ( i = 0; i < this.childNodes.length; i++ ) {
+			childrenNodes = this.childNodes[i];
+			if(childrenNodes.nodeName == 'H3') {
+				console.log(childrenNodes);
+				console.log(colorId);
+				childrenNodes.classList.remove(colorId + '-text');
+			}
+		}
 	}
 }
 
 
 
-// for (i = 0; i < pubHeader.length; i++) {
-//   pubHeader[i].onmouseout = function() {
-//     console.log('out: ' + pubHeader[i]);
-//   }
-// }

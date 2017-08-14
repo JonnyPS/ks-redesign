@@ -24,20 +24,40 @@ body, .wrapper, .boxContainer, .box {
 
 /* sidebar colours */
 
-#sideBar-blue {
+#sideBarBlue {
 	border-left: 3px solid #03366b;
 }
 
-#sideBar-green {
+#sideBarGreen {
 	border-left: 3px solid #6c9e30;
 }
 
-#sideBar-orange {
+#sideBarOrange {
 	border-left: 3px solid #f37021;
 }
 
-#sideBar-lightBlue {
+#sideBarLightBlue {
 	border-left: 3px solid #00a0e4;
+}
+
+.sideBarBlue-text {
+	color:#03366b;
+	cursor: pointer;
+}
+
+.sideBarGreen-text {
+	color:#6c9e30;
+	cursor: pointer;
+}
+
+.sideBarOrange-text {
+	color:#f37021;
+	cursor: pointer;
+}
+
+.sideBarLightBlue-text {
+	color:#00a0e4;
+	cursor: pointer;
 }
 
 
